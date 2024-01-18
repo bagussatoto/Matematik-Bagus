@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title> Kalkulator Matematik</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="header-title">Website Matematik</h1>
+      <!-- <p class="header-subtitle">Kalkulator Matematik</p> -->
+    </header>
+
+    <section>
+      <div class="section-upper">
+        <h2 class="upper-title">Welcome To Website Matematik</h2>
+        <p class="upper-description">
+          Hi sobat, selamat datang di Website Matematik <br />
+          Website Matematik adalah Kalkulator online untuk menghitung luas dan keliling
+          Persegi.
+        </p>
+        <nav class="main-menu">
+          <ul class="menu-list">
+            <li class="menu-item" id="link-luas">
+              <a href="#luas" class="menu-link">Luas Persegi</a>
+            </li>
+            <li class="menu-item" id="link-keliling">
+              <a href="#keliling" class="menu-link">Keliling Persegi</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <aside>
+        <div id="aside-luas">
+          <h2 class="aside-title">Luas Persegi</h2>
+          <img src="assets/rectangle.svg" alt="rectangle" class="aside-image" />
+
+          <div class="aside-content">
+            <span class="content-1">Rumus Luas Persegi Yaitu:</span>
+            <span class="content-2">L = S x S</span>
+            <span class="content-3">Dimana: </span>
+            <span class="content-4">L = Luas</span>
+            <span class="content-5">S = Sisi</span>
+          </div>
+        </div>
+        <div id="aside-keliling">
+          <h2 class="aside-title">Keliling Persegi</h2>
+          <img src="assets/rectangle.svg" alt="rectangle" class="aside-image" />
+
+          <div class="aside-content">
+            <span class="content-1">Rumus Keliling Persegi Yaitu:</span>
+            <span class="content-2">K = 4 x S</span>
+            <span class="content-3">Dimana: </span>
+            <span class="content-4">K = Keliling</span>
+            <span class="content-5">S = Sisi</span>
+          </div>
+        </div>
+      </aside>
+
+      <main>
+        <div id="main-luas">
+          <h2 class="main-title">Hitung Luas Persegi</h2>
+          <form class="input-form" id="form-luas">
+            <input
+              type="number"
+              id="input-luas"
+              name="sisi"
+              placeholder="0"
+            />
+
+            <div class="result-luas">
+              <span class="result-rumus-luas">L = S x S</span>
+              <span class="result-input-luas">L = 40 x 40</span>
+              <span class="result-akhir-luas">L = 1600</span>
+            </div>
+
+            <div class="button">
+              <button type="submit" class="button-hitung" id="hitungLuas">Hitung</button>
+              <button type="button" class="button-reset" id="resetLuas">Reset</button>
+            </div>
+          </form>  
+        </div>
+        
+        <div id="main-keliling">
+          <h2 class="main-title">Hitung Keliling Persegi</h2>
+          <form class="input-form" id="form-keliling">
+            <input
+              type="number"
+              id="input-keliling"
+              name="sisi"
+              placeholder="0"
+            />
+
+            <div class="result-keliling">
+              <span class="result-rumus-keliling">K = 4 x S</span>
+              <span class="result-input-keliling">K = 40 x 40</span>
+              <span class="result-akhir-keliling">K = 1600</span>
+            </div>
+
+            <div class="button">
+              <button type="submit" class="button-hitung" id="hitungKeliling">Hitung</button>
+              <button type="button" class="button-reset" id="resetKeliling">Reset</button>
+            </div>
+          </form>  
+        </div>
+      </main>
+    </section>
+
+    <footer>
+      <span>
+        Developer [Bagus Budi Satoto](https://github.com/bagussatoto/)
+      </span>
+    <script src="js/script.js"></script>
+  </body>
+</html>
