@@ -1,1 +1,5 @@
-# Matematik-Bagus
+
+## Screenshots
+
+![App Screenshot](./assets/screenshot-1.png)
+
