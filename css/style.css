@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+:root {
+  /* colors */
+  --primary-color: #3498db;
+  --secondary-color: #2880b9;
+  --background-color: #f5f5f5;
+  --text-color: #ffffff;
+  --red-color: #d50202; 
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: var(--background-color);
+}
+
+/* other css */
+aside,
+main,
+.section-upper
+{
+  margin-bottom: 40px;
+}
+
+h1 {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+span {
+  font-size: 0.7rem;
+  font-weight: 400;
+}
+
+/* header */
+header {
+  padding: 20px 0px;
+  text-align: center;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+}
+
+.header-subtitle {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* section */
+section {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--text-color);
+  margin: 20px 10px;
+  padding: 20px 0px;
+  text-align: center;
+}
+
+.upper-description{
+  font-size: 0.7rem;
+  font-weight: 300;
+  margin-bottom: 10px;
+  padding: 0px 10px;
+}
+
+/* section navbar */
+.menu-item {
+  font-size: 0.5rem;
+  font-weight: 500;
+  list-style: none;
+}
+
+.menu-link {
+  background-color: var(--secondary-color);
+  display: block;
+  padding: 12px 0px;
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.menu-link:hover, .menu-link:active, .menu-link:focus {
+  background-color: var(--text-color);
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+}
+
+/* aside */
+#aside-keliling, #main-keliling {
+  display: none;
+}
+
+.aside-title {
+  padding: 20px 0px;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+}
+
+.aside-image {
+  width: 50%;
+  height: auto;
+  margin: 10px 0px;
+}
+
+.aside-content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  text-align: left;
+  padding: 0px 10px;
+}
+
+.aside-content span:nth-child(2) {
+  text-align: center;
+  font-weight: 600;
+  padding: 5px 0px;
+}
+
+/* main */
+main {
+  display: inherit;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* form */
+.input-form {
+  padding: 0px 10px;
+}
+
+.input-form input {
+  width: 100%;
+  outline: none;
+  padding: 5px;
+}
+
+.result-luas, .result-keliling {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  text-align: left;
+  padding: 10px 0px;
+}
+
+.button {
+  margin-top: 20px;
+}
+
+button {
+  color: var(--text-color);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.button-hitung {
+  background-color: var(--secondary-color);
+}
+
+.button-reset {
+  background-color: var(--red-color);
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  padding: 10px 0px;
+  text-align: center;
+}
+
+
+
+/* responsive breakpoints */
+@media (min-width: 425px) {
+  section {
+    margin: 20px auto;
+    max-width: 90%;
+  }
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  span {
+    font-size: 0.9rem;
+  }
+  
+  .header-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .menu-item {
+    font-size: 0.7rem;
+  }
+  
+  section {
+    max-width: 80%;
+  }
+
+  .upper-description {
+    font-size: 1rem;
+  }
+
+  .aside-image {
+    width: 35%;
+  }
+}
+
+@media (min-width: 1024px) {
+  h2 {
+    font-size: 1.4rem;
+  }
+  
+  section {
+    max-width: 70%;
+  }
+
+  .aside-image {
+    width: 30%;
+  }
+}
